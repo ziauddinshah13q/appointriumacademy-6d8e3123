@@ -39,9 +39,11 @@ const FeaturesSection = () => {
     <section className="py-24 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Everything You Need to{' '}
-            <span className="gradient-text">Master AI Automation</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+            Everything You Need to
+          </h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif italic text-muted-foreground mb-6">
+            Master AI Automation
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             From zero experience to landing paying clients. Our comprehensive curriculum covers it all.
@@ -49,13 +51,13 @@ const FeaturesSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <GlassCard key={feature.title} className="group">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <feature.icon className="w-6 h-6 text-primary" />
+              <div className="w-10 h-10 rounded-md bg-muted flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+                <feature.icon className="w-5 h-5 text-foreground" />
               </div>
-              <h3 className="font-display text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground">{feature.description}</p>
+              <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+              <p className="text-muted-foreground text-sm">{feature.description}</p>
             </GlassCard>
           ))}
         </div>

@@ -9,9 +9,10 @@ const Navbar = () => {
   const location = useLocation();
 
   const mainLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Why AI', path: '/why-ai' },
+    { name: 'COURSES', path: '/n8n-course' },
+    { name: 'RESULTS', path: '/results' },
+    { name: 'PRICING', path: '/pricing' },
+    { name: 'CONTACT', path: '/contact' },
   ];
 
   const courseLinks = [
@@ -23,63 +24,42 @@ const Navbar = () => {
     { name: 'Solution-Based Agents', path: '/solution-agents' },
   ];
 
-  const otherLinks = [
-    { name: 'Get Your First Client', path: '/first-client' },
-    { name: 'Appoint Funnels', path: '/appoint-funnels' },
-    { name: 'Tools', path: '/tools' },
-    { name: 'Results', path: '/results' },
-    { name: 'Pricing', path: '/pricing' },
-  ];
-
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass-strong">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">A</span>
+          <Link to="/" className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-full border-2 border-foreground flex items-center justify-center">
+              <span className="text-foreground font-semibold text-sm">A</span>
             </div>
-            <span className="font-display font-bold text-lg hidden sm:block">
-              Appointrium<span className="text-primary">Academy</span>
-            </span>
+            <div className="flex flex-col">
+              <span className="font-semibold text-sm tracking-[0.2em] leading-none">APPOINTRIUM</span>
+              <span className="text-[10px] tracking-[0.3em] text-muted-foreground leading-none mt-0.5">ACADEMY</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-1">
-            {mainLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  isActive(link.path)
-                    ? 'text-primary bg-primary/10'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))}
-
+          <div className="hidden lg:flex items-center gap-8">
             {/* Courses Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setCoursesOpen(!coursesOpen)}
                 onBlur={() => setTimeout(() => setCoursesOpen(false), 200)}
-                className="flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                className="flex items-center gap-1 text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors"
               >
-                Courses
+                COURSES
                 <ChevronDown className={`w-4 h-4 transition-transform ${coursesOpen ? 'rotate-180' : ''}`} />
               </button>
               {coursesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 glass rounded-xl p-2 animate-fade-in">
+                <div className="absolute top-full left-0 mt-2 w-56 bg-card border border-border rounded-lg p-2 animate-fade-in">
                   {courseLinks.map((link) => (
                     <Link
                       key={link.path}
                       to={link.path}
-                      className="block px-3 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                      className="block px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -88,31 +68,37 @@ const Navbar = () => {
               )}
             </div>
 
-            {otherLinks.slice(0, 3).map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  isActive(link.path)
-                    ? 'text-primary bg-primary/10'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))}
+            <Link
+              to="/results"
+              className={`text-sm font-medium tracking-wide transition-colors ${
+                isActive('/results') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              RESULTS
+            </Link>
+            <Link
+              to="/pricing"
+              className={`text-sm font-medium tracking-wide transition-colors ${
+                isActive('/pricing') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              PRICING
+            </Link>
+            <Link
+              to="/contact"
+              className={`text-sm font-medium tracking-wide transition-colors ${
+                isActive('/contact') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              CONTACT
+            </Link>
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:block">
             <Link to="/pricing">
-              <Button variant="outline" size="sm" className="border-primary/50 text-primary hover:bg-primary/10">
-                Pricing
-              </Button>
-            </Link>
-            <Link to="/contact">
-              <Button size="sm" className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90">
-                Get Started
+              <Button variant="outline" className="border-foreground text-foreground hover:bg-foreground hover:text-background font-medium tracking-wide">
+                ENROLL NOW
               </Button>
             </Link>
           </div>
@@ -130,20 +116,6 @@ const Navbar = () => {
         {isOpen && (
           <div className="lg:hidden pb-4 animate-fade-in">
             <div className="flex flex-col gap-1">
-              {mainLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  onClick={() => setIsOpen(false)}
-                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                    isActive(link.path)
-                      ? 'text-primary bg-primary/10'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                  }`}
-                >
-                  {link.name}
-                </Link>
-              ))}
               <div className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                 Courses
               </div>
@@ -152,33 +124,30 @@ const Navbar = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className="px-4 py-2 pl-6 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                  className="px-4 py-2 pl-6 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
                 >
                   {link.name}
                 </Link>
               ))}
-              <div className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                More
-              </div>
-              {otherLinks.map((link) => (
+              <div className="border-t border-border my-2" />
+              {mainLinks.slice(1).map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className="px-4 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                  className={`px-4 py-3 text-sm font-medium tracking-wide transition-colors ${
+                    isActive(link.path)
+                      ? 'text-foreground'
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
                 >
                   {link.name}
                 </Link>
               ))}
-              <div className="flex gap-2 mt-4 px-4">
-                <Link to="/pricing" className="flex-1">
-                  <Button variant="outline" size="sm" className="w-full border-primary/50 text-primary">
-                    Pricing
-                  </Button>
-                </Link>
-                <Link to="/contact" className="flex-1">
-                  <Button size="sm" className="w-full bg-gradient-to-r from-primary to-secondary">
-                    Get Started
+              <div className="px-4 mt-4">
+                <Link to="/pricing" onClick={() => setIsOpen(false)}>
+                  <Button variant="outline" className="w-full border-foreground text-foreground hover:bg-foreground hover:text-background">
+                    ENROLL NOW
                   </Button>
                 </Link>
               </div>
