@@ -12,11 +12,11 @@ const plans = [
     period: 'one-time',
     description: 'Perfect for beginners who want to learn the fundamentals.',
     features: [
-      'N8N Full Course',
       'AI Agents Basics',
       'N8N Masterclass',
       'Basics of GoHighLevel',
-      'MCP Live (5 Agents Build)',
+      'Model Context Protocol Tutorials',
+      '5 Live Agents Build',
       'Client Hunting Program',
       'Full Chat Support',
       'Email Support',
