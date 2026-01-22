@@ -28,6 +28,7 @@ const plans = [
     description: 'Everything you need to build a profitable automation business.',
     features: [
       'All Starter Features',
+      'N8N Self Host Free Method',
       'Voice Agents Program',
       'WhatsApp Automation',
       'Solution-Based Agents',
