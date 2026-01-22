@@ -78,15 +78,15 @@ const Pricing = () => {
             {plans.map((plan) => (
               <div key={plan.name} className={`relative ${plan.popular ? 'lg:-mt-4 lg:mb-4' : ''}`}>
                 {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-primary to-secondary rounded-full text-sm font-semibold text-primary-foreground">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-foreground rounded-full text-sm font-semibold text-background">
                     Recommended
                   </div>
                 )}
                 <GlassCard 
-                  className={`h-full flex flex-col ${plan.popular ? 'glow-border border-primary/50' : ''}`}
+                  className={`h-full flex flex-col ${plan.popular ? 'glow-border border-muted-foreground/30' : ''}`}
                   glow={plan.popular}
                 >
-                  <plan.icon className={`w-10 h-10 ${plan.popular ? 'text-primary' : 'text-muted-foreground'} mb-4`} />
+                  <plan.icon className="w-10 h-10 text-muted-foreground mb-4" />
                   <h3 className="font-display text-2xl font-bold mb-2">{plan.name}</h3>
                   <p className="text-muted-foreground text-sm mb-6">{plan.description}</p>
                   <div className="mb-6">
