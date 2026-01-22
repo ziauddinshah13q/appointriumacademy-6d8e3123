@@ -1,7 +1,7 @@
 import PageLayout from '@/components/PageLayout';
 import { Link } from 'react-router-dom';
 import GlassCard from '@/components/GlassCard';
-import { Bot, Workflow, Phone, MessageSquare, Users, Zap, ArrowRight } from 'lucide-react';
+import { Bot, Workflow, Phone, MessageSquare, Users, Zap, ArrowRight, Mail } from 'lucide-react';
 
 const courses = [
   {
@@ -39,6 +39,12 @@ const courses = [
     title: 'Client Systems',
     description: 'Ready-to-deploy templates that solve real business problems.',
     link: '/solution-agents',
+  },
+  {
+    icon: Mail,
+    title: 'Cold Emailing Engine',
+    description: 'Full cold email system to generate leads and book meetings on autopilot.',
+    link: '/cold-emailing',
   },
 ];
 
