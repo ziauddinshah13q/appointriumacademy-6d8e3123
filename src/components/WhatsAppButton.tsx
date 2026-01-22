@@ -11,15 +11,15 @@ const WhatsAppButton = () => {
     >
       <div className="relative">
         {/* Glow effect */}
-        <div className="absolute inset-0 bg-primary rounded-full blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
+        <div className="absolute inset-0 bg-foreground/20 rounded-full blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
         
         {/* Button */}
-        <div className="relative w-14 h-14 bg-primary rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-          <MessageCircle className="w-7 h-7 text-primary-foreground" fill="currentColor" />
+        <div className="relative w-14 h-14 bg-card border border-border rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+          <MessageCircle className="w-7 h-7 text-foreground" fill="currentColor" />
         </div>
 
         {/* Pulse animation */}
-        <div className="absolute inset-0 rounded-full bg-primary animate-ping opacity-25" />
+        <div className="absolute inset-0 rounded-full bg-foreground/20 animate-ping opacity-25" />
       </div>
 
       {/* Tooltip */}
