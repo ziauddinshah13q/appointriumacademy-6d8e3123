@@ -6,7 +6,7 @@ import { Wrench, ArrowRight } from 'lucide-react';
 
 const tools = [
   {
-    name: 'N8N',
+    name: 'n8n',
     category: 'Workflow Automation',
     description: 'The backbone of everything we build. Visual workflow automation.',
   },

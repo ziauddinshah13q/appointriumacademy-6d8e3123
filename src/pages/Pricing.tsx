@@ -13,7 +13,7 @@ const plans = [
     description: 'Perfect for beginners who want to learn the fundamentals.',
     features: [
       'AI Agents Basics',
-      'N8N Masterclass',
+      'n8n Masterclass',
       'GoHighLevel Tutorials',
       'Model Context Protocol Tutorials',
       '5 Live Agents Build',
@@ -31,7 +31,7 @@ const plans = [
     description: 'Everything you need to build a profitable automation business.',
     features: [
       'All Starter Features',
-      'N8N Self Host Free Method',
+      'n8n Self Host Free Method',
       'Voice Agents Program',
       'WhatsApp Automation',
       'Solution-Based Agents',
@@ -147,7 +147,7 @@ const Pricing = () => {
 
               <div className="mt-8 grid md:grid-cols-3 gap-4">
                 {[
-                  'Set up real N8N workflows from scratch (the right way)',
+                  'Set up real n8n workflows from scratch (the right way)',
                   'Understand MCP concepts and build 5 live agents step-by-step',
                   'Learn client-hunting systems + chat support to keep you moving',
                 ].map((outcome) => (

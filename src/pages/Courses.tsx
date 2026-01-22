@@ -6,7 +6,7 @@ import { Bot, Workflow, Phone, MessageSquare, Users, Zap, ArrowRight, Mail } fro
 const courses = [
   {
     icon: Workflow,
-    title: 'N8N Mastery',
+    title: 'n8n Mastery',
     description: 'From beginner to advanced automation expert. Build complex workflows that scale.',
     link: '/n8n-course',
   },

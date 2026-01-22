@@ -8,7 +8,7 @@ const steps = [
   {
     number: '01',
     title: 'Learn the Skills',
-    description: 'Master N8N, AI agents, and automation fundamentals.',
+    description: 'Master n8n, AI agents, and automation fundamentals.',
   },
   {
     number: '02',
