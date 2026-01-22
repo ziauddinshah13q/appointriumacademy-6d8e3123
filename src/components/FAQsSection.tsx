@@ -15,8 +15,8 @@ const faqs = [
     answer: "If you complete the Professional or Elite program and don't land your first paying AI automation client within 60 days, we'll refund every penny. No questions asked.",
   },
   {
-    question: 'What is N8N and why should I learn it?',
-    answer: 'N8N is a powerful workflow automation tool that lets you connect apps and automate tasks without coding. Businesses pay $5K-$50K for N8N automations, making it a highly profitable skill.',
+    question: 'What is n8n and why should I learn it?',
+    answer: 'n8n is a powerful workflow automation tool that lets you connect apps and automate tasks without coding. Businesses pay $5K-$50K for n8n automations, making it a highly profitable skill.',
   },
   {
     question: 'How long will it take to complete the courses?',

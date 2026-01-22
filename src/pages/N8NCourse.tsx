@@ -5,7 +5,7 @@ import GlassCard from '@/components/GlassCard';
 import { Workflow, CheckCircle, ArrowRight, Play, Code, Database, Zap } from 'lucide-react';
 
 const modules = [
-  'N8N Interface & Core Concepts',
+  'n8n interface\\login',
   'Triggers & Webhooks',
   'HTTP Requests & APIs',
   'Data Transformation',
@@ -36,10 +36,10 @@ const N8NCourse = () => {
               <span className="text-sm font-medium">Most Popular Course</span>
             </div>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-              N8N <span className="gradient-text">Full Course</span>
+              n8n <span className="gradient-text">Full Course</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Master N8N from absolute beginner to advanced automation architect. Build workflows that businesses pay $5K-$50K for.
+              Master n8n from absolute beginner to advanced automation architect. Build workflows that businesses pay $5K-$50K for.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ const N8NCourse = () => {
                 Complete <span className="text-primary">Curriculum</span>
               </h2>
               <p className="text-muted-foreground mb-8">
-                Our N8N course takes you from zero experience to building complex, production-ready automations that solve real business problems.
+                Our n8n course takes you from zero experience to building complex, production-ready automations that solve real business problems.
               </p>
               <div className="space-y-3">
                 {modules.map((module, index) => (

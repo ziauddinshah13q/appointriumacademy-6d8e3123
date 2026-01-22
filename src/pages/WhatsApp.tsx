@@ -65,7 +65,7 @@ const WhatsApp = () => {
             <div className="space-y-4">
               {[
                 'WhatsApp Business API setup and configuration',
-                'Building conversation flows with N8N',
+                'Building conversation flows with n8n',
                 'Integrating with CRMs and databases',
                 'Payment processing via WhatsApp',
                 'Multi-language support and localization',

@@ -34,7 +34,7 @@ const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            A complete academy to master N8N, AI agents, voice agents & real client systems.
+            A complete academy to master n8n, AI agents, voice agents & real client systems.
           </p>
 
           {/* CTA Buttons */}
