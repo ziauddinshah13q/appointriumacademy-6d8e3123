@@ -8,7 +8,7 @@ const plans = [
   {
     name: 'Starter',
     icon: Zap,
-    price: '$497',
+    price: '4,000 PKR',
     period: 'one-time',
     description: 'Perfect for beginners who want to learn the fundamentals.',
     features: [
@@ -23,7 +23,7 @@ const plans = [
   {
     name: 'Professional',
     icon: Crown,
-    price: '$997',
+    price: '10,000 PKR',
     period: 'one-time',
     description: 'Everything you need to build a profitable automation business.',
     features: [
@@ -41,7 +41,7 @@ const plans = [
   {
     name: 'Elite',
     icon: Rocket,
-    price: '$2,497',
+    price: '20,000 PKR',
     period: 'one-time',
     description: 'Premium mentorship for serious agency builders.',
     features: [
@@ -79,7 +79,7 @@ const Pricing = () => {
               <div key={plan.name} className={`relative ${plan.popular ? 'lg:-mt-4 lg:mb-4' : ''}`}>
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-primary to-secondary rounded-full text-sm font-semibold text-primary-foreground">
-                    Most Popular
+                    Recommended
                   </div>
                 )}
                 <GlassCard 
