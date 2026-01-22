@@ -15,6 +15,7 @@ const plans = [
       'N8N Full Course',
       'AI Agents Basics',
       'N8N Masterclass',
+      'Basics of GoHighLevel',
       'MCP Live (5 Agents Build)',
       'Client Hunting Program',
       'Full Chat Support',
