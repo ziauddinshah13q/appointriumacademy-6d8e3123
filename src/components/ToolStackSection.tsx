@@ -9,19 +9,16 @@ import vapiLogo from '@/assets/logos/vapi.png';
 type ToolLogo = {
   name: string;
   src: string;
-  heightClassName?: string;
-  imgClassName?: string;
 };
 
 const logos: ToolLogo[] = [
-  { name: 'Appointrium Academy', src: mainLogo, heightClassName: 'h-10 sm:h-12', imgClassName: 'opacity-95' },
-  { name: 'n8n', src: n8nLogo, heightClassName: 'h-9 sm:h-11' },
-  // Logos with baked dark/white backgrounds are visually cleaned using blend-mode on the dark theme.
-  { name: 'Vapi', src: vapiLogo, heightClassName: 'h-10 sm:h-12', imgClassName: 'mix-blend-screen' },
-  { name: 'HighLevel', src: highlevelLogo, heightClassName: 'h-10 sm:h-12' },
-  { name: 'OpenAI', src: openaiLogo, heightClassName: 'h-10 sm:h-12', imgClassName: 'invert mix-blend-screen' },
-  { name: 'Instantly', src: instantlyLogo, heightClassName: 'h-9 sm:h-11', imgClassName: 'invert mix-blend-screen' },
-  { name: 'Apify', src: apifyLogo, heightClassName: 'h-9 sm:h-11', imgClassName: 'mix-blend-screen' },
+  { name: 'Appointrium Academy', src: mainLogo },
+  { name: 'n8n', src: n8nLogo },
+  { name: 'Vapi', src: vapiLogo },
+  { name: 'HighLevel', src: highlevelLogo },
+  { name: 'OpenAI', src: openaiLogo },
+  { name: 'Instantly', src: instantlyLogo },
+  { name: 'Apify', src: apifyLogo },
 ];
 
 const ToolStackSection = () => {
@@ -43,7 +40,7 @@ const ToolStackSection = () => {
               {track.map((logo, idx) => (
                 <div
                   key={`${logo.name}-${idx}`}
-                  className="shrink-0 flex items-center justify-center"
+                  className="shrink-0 h-16 w-44 sm:h-20 sm:w-56 flex items-center justify-center"
                   aria-label={logo.name}
                   title={logo.name}
                 >
@@ -51,7 +48,7 @@ const ToolStackSection = () => {
                     src={logo.src}
                     alt={`${logo.name} logo`}
                     loading="lazy"
-                    className={`${logo.heightClassName ?? 'h-10'} w-auto opacity-90 hover:opacity-100 transition-opacity ${logo.imgClassName ?? ''}`}
+                    className="max-h-full max-w-full object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 </div>
               ))}
