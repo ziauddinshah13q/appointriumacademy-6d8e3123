@@ -38,28 +38,32 @@ const FeaturesSection = () => {
   return (
     <section className="py-24 relative">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Everything You Need to
-          </h2>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif italic text-muted-foreground mb-6">
-            Master AI Automation
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            From zero experience to landing paying clients. Our comprehensive curriculum covers it all.
-          </p>
-        </div>
+        <div className="grid lg:grid-cols-12 gap-12 items-start">
+          {/* Left side heading */}
+          <div className="lg:col-span-4 lg:sticky lg:top-24">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              Our
+            </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif italic text-muted-foreground mb-6">
+              Courses
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              From zero experience to landing paying clients. Our comprehensive curriculum covers it all.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature) => (
-            <GlassCard key={feature.title} className="group">
-              <div className="w-10 h-10 rounded-md bg-muted flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
-                <feature.icon className="w-5 h-5 text-foreground" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground text-sm">{feature.description}</p>
-            </GlassCard>
-          ))}
+          {/* Right side cards */}
+          <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {features.map((feature) => (
+              <GlassCard key={feature.title} className="group">
+                <div className="w-10 h-10 rounded-md bg-muted flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+                  <feature.icon className="w-5 h-5 text-foreground" />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                <p className="text-muted-foreground text-sm">{feature.description}</p>
+              </GlassCard>
+            ))}
+          </div>
         </div>
       </div>
     </section>
