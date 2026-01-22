@@ -5,12 +5,10 @@ import GlassCard from '@/components/GlassCard';
 import { Phone, CheckCircle, ArrowRight, Mic, Clock, Users } from 'lucide-react';
 
 const useCases = [
-  { title: 'Appointment Booking', description: 'AI handles scheduling calls 24/7' },
-  { title: 'Lead Qualification', description: 'Screen prospects before human handoff' },
-  { title: 'Customer Support', description: 'Resolve common issues automatically' },
-  { title: 'Order Status', description: 'Provide real-time updates via phone' },
-  { title: 'Surveys & Feedback', description: 'Collect data through natural calls' },
-  { title: 'Reminders & Follow-ups', description: 'Automated outreach that converts' },
+  { title: 'AI Receptionist', description: 'AI handles incoming calls and routes them intelligently' },
+  { title: 'AI Cold Caller', description: 'Automated outbound calls to generate new leads' },
+  { title: 'AI Lead Reactivation', description: 'Re-engage old leads and bring them back' },
+  { title: 'AI Order Confirmation', description: 'Confirm orders and provide updates via phone' },
 ];
 
 const VoiceAgents = () => {
