@@ -124,6 +124,44 @@ const Pricing = () => {
             ))}
           </div>
 
+          {/* Starter mini-section */}
+          <div className="max-w-4xl mx-auto mb-20">
+            <div className="glass-strong rounded-3xl p-10 md:p-12">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+                <div>
+                  <h2 className="font-display text-3xl md:text-4xl font-bold mb-3">
+                    What you’ll learn in <span className="text-primary">Starter</span>
+                  </h2>
+                  <p className="text-muted-foreground text-lg max-w-2xl">
+                    Build your first automation foundations and learn the exact skills you need to land your first client.
+                  </p>
+                </div>
+
+                <Link to="/contact" className="shrink-0">
+                  <Button variant="hero" size="lg" className="w-full md:w-auto">
+                    Enroll in Starter
+                    <ArrowRight className="w-5 h-5" />
+                  </Button>
+                </Link>
+              </div>
+
+              <div className="mt-8 grid md:grid-cols-3 gap-4">
+                {[
+                  'Set up real N8N workflows from scratch (the right way)',
+                  'Understand MCP concepts and build 5 live agents step-by-step',
+                  'Learn client-hunting systems + chat support to keep you moving',
+                ].map((outcome) => (
+                  <div key={outcome} className="glass rounded-2xl p-5">
+                    <div className="flex gap-3">
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <p className="text-sm leading-relaxed">{outcome}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* Guarantee */}
           <div className="text-center glass-strong rounded-3xl p-12">
             <h2 className="font-display text-3xl font-bold mb-4">
