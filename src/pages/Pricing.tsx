@@ -14,6 +14,10 @@ const plans = [
     features: [
       'N8N Full Course',
       'AI Agents Basics',
+      'N8N Masterclass',
+      'MCP Live (5 Agents Build)',
+      'Client Hunting Program',
+      'Full Chat Support',
       'Email Support',
       '30-Day Guarantee',
     ],
