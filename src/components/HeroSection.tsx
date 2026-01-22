@@ -39,7 +39,7 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <Link to="/n8n-course">
+            <Link to="/courses">
               <Button variant="default" size="lg" className="bg-foreground text-background hover:bg-foreground/90 font-medium px-8">
                 Explore Courses
                 <ArrowRight className="w-4 h-4 ml-2" />
