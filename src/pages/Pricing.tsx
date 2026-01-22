@@ -14,7 +14,6 @@ const plans = [
     features: [
       'N8N Full Course',
       'AI Agents Basics',
-      'Community Access',
       'Email Support',
       '30-Day Guarantee',
     ],
@@ -57,7 +56,6 @@ const plans = [
       'White-Label Resources',
       'Agency Building Blueprint',
       'Lifetime Updates',
-      'VIP Community Access',
       '90-Day Guarantee',
     ],
     popular: false,
