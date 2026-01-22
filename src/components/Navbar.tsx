@@ -13,6 +13,7 @@ const Navbar = () => {
     { name: 'COURSES', path: '/courses' },
     { name: 'RESULTS', path: '/results' },
     { name: 'PRICING', path: '/pricing' },
+    { name: 'PRIVACY POLICY', path: '/privacy-policy' },
     { name: 'CONTACT', path: '/contact' },
   ];
 
@@ -93,6 +94,14 @@ const Navbar = () => {
               }`}
             >
               PRICING
+            </Link>
+            <Link
+              to="/privacy-policy"
+              className={`text-sm font-medium tracking-wide transition-colors ${
+                isActive('/privacy-policy') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              PRIVACY POLICY
             </Link>
             <Link
               to="/contact"

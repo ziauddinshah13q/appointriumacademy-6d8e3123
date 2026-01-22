@@ -15,6 +15,7 @@ const Footer = () => {
     { name: 'Why AI Automation', path: '/why-ai' },
     { name: 'Student Results', path: '/results' },
     { name: 'Pricing', path: '/pricing' },
+    { name: 'Privacy Policy', path: '/privacy-policy' },
     { name: 'Contact', path: '/contact' },
   ];
 
