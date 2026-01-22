@@ -9,7 +9,8 @@ const Navbar = () => {
   const location = useLocation();
 
   const mainLinks = [
-    { name: 'COURSES', path: '/n8n-course' },
+    { name: 'HOME', path: '/' },
+    { name: 'COURSES', path: '/courses' },
     { name: 'RESULTS', path: '/results' },
     { name: 'PRICING', path: '/pricing' },
     { name: 'CONTACT', path: '/contact' },
@@ -43,6 +44,15 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
+            <Link
+              to="/"
+              className={`text-sm font-medium tracking-wide transition-colors ${
+                isActive('/') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              HOME
+            </Link>
+
             {/* Courses Dropdown */}
             <div className="relative">
               <button
@@ -116,6 +126,16 @@ const Navbar = () => {
         {isOpen && (
           <div className="lg:hidden pb-4 animate-fade-in">
             <div className="flex flex-col gap-1">
+              <Link
+                to="/"
+                onClick={() => setIsOpen(false)}
+                className={`px-4 py-3 text-sm font-medium tracking-wide transition-colors ${
+                  isActive('/') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                HOME
+              </Link>
+              <div className="border-t border-border my-2" />
               <div className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                 Courses
               </div>
@@ -130,7 +150,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="border-t border-border my-2" />
-              {mainLinks.slice(1).map((link) => (
+              {mainLinks.slice(2).map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
