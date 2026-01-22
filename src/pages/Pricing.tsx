@@ -47,6 +47,11 @@ const plans = [
     description: 'Premium mentorship for serious agency builders.',
     features: [
       'All Professional Features',
+      'Full Business Launch',
+      'Website Design for Your Agency',
+      'Handle First 10 Sales Calls',
+      'Trained Use of Appoint Funnels Testimonials',
+      'One Auto Dialer for Dialing Calls',
       '1-on-1 Coaching Calls',
       'Done-For-You Templates',
       'White-Label Resources',
