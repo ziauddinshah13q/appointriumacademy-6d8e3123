@@ -38,7 +38,7 @@ const Navbar = () => {
             <img 
               src={aLogo} 
               alt="Appointrium Academy Logo"
-              className="h-9 md:h-10 w-auto"
+              className="h-12 md:h-14 w-auto"
             />
             <div className="flex flex-col">
               <span className="font-semibold text-sm tracking-[0.2em] leading-none">APPOINTRIUM</span>
