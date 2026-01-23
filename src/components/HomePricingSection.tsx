@@ -15,7 +15,9 @@ const plans = [
       'AI Agents Basics',
       'n8n Masterclass',
       'GoHighLevel Tutorials',
+      'Model Context Protocol Tutorials',
       '5 Live Agents Build',
+      'Vipe Coding',
       'Client Hunting Program',
       'Full Chat Support',
     ],
@@ -29,11 +31,14 @@ const plans = [
     description: 'Everything you need to build a profitable automation business.',
     features: [
       'All Starter Features',
+      'n8n Self Host Free Method',
       'Voice Agents Program',
       'WhatsApp Automation',
       'Solution-Based Agents',
       'Live Classes Access',
+      'Appoint Funnels System',
       '60-Day Client Guarantee',
+      'Priority Support',
     ],
     popular: true,
   },
@@ -46,9 +51,15 @@ const plans = [
     features: [
       'All Professional Features',
       'Full Business Launch',
-      'Website Design for Agency',
+      'Website Design for Your Agency',
+      'Handle First 10 Sales Calls',
+      'Trained Use of Appoint Funnels Testimonials',
+      'One Auto Dialer for Dialing Calls',
       '1-on-1 Coaching Calls',
       'Done-For-You Templates',
+      'White-Label Resources',
+      'Agency Building Blueprint',
+      'Lifetime Updates',
       '90-Day Guarantee',
     ],
     popular: false,
@@ -61,13 +72,10 @@ const HomePricingSection = () => {
       <div className="container mx-auto px-4">
         <ScrollAnimation animation="fade-up" className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Choose Your
-          </h2>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif italic text-muted-foreground mb-6">
-            Learning Path
+            Pricing & <span className="font-serif italic text-muted-foreground">Enrollment</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Invest in skills that pay for themselves. All plans include lifetime access.
+            Invest in skills that pay for themselves. Choose the plan that fits your goals.
           </p>
         </ScrollAnimation>
 
@@ -103,13 +111,13 @@ const HomePricingSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/pricing">
+                  <Link to="/contact">
                     <Button 
                       variant={plan.popular ? 'default' : 'outline'} 
                       size="lg" 
                       className={`w-full ${plan.popular ? 'bg-foreground text-background hover:bg-foreground/90' : ''}`}
                     >
-                      View Details
+                      Enroll Now
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
@@ -119,14 +127,18 @@ const HomePricingSection = () => {
           ))}
         </div>
 
+        {/* Guarantee */}
         <ScrollAnimation animation="fade-up" delay={0.3}>
-          <div className="text-center">
-            <Link to="/pricing">
-              <Button variant="link" className="text-muted-foreground hover:text-foreground">
-                Compare all plan features
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
+          <div className="text-center glass-strong rounded-3xl p-12">
+            <h3 className="text-2xl font-bold mb-4">
+              Risk-Free <span className="font-serif italic text-muted-foreground">Guarantee</span>
+            </h3>
+            <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
+              Professional & Elite plans come with our 60-90 day guarantee. Get your first client or get a full refund. No questions asked.
+            </p>
+            <p className="text-muted-foreground text-sm">
+              Questions? Email us at <a href="mailto:appointfunnels@gmail.com" className="text-primary hover:underline">appointfunnels@gmail.com</a>
+            </p>
           </div>
         </ScrollAnimation>
       </div>
