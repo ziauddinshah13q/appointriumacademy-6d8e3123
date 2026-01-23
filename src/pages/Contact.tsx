@@ -38,7 +38,7 @@ const Contact = () => {
               
               <GlassCard>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center">
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -72,8 +72,8 @@ const Contact = () => {
 
               <GlassCard>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-secondary" />
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>

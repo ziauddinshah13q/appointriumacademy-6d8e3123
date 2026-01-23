@@ -44,8 +44,8 @@ const SolutionAgents = () => {
         <div className="container mx-auto px-4">
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-secondary/30 mb-6">
-              <Lightbulb className="w-4 h-4 text-secondary" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/30 mb-6">
+              <Lightbulb className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium">Industry-Specific</span>
             </div>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
@@ -78,7 +78,7 @@ const SolutionAgents = () => {
                 <p className="text-muted-foreground">Faster deployment with proven templates</p>
               </div>
               <div>
-                <div className="font-display text-4xl font-bold text-secondary mb-2">3x</div>
+                <div className="font-display text-4xl font-bold text-primary mb-2">3x</div>
                 <p className="text-muted-foreground">Higher prices for industry expertise</p>
               </div>
               <div>

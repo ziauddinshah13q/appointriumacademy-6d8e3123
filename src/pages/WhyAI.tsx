@@ -88,14 +88,14 @@ const WhyAI = () => {
                   <span className="font-display font-bold text-primary">85%</span>
                 </div>
                 <div className="h-3 bg-muted rounded-full overflow-hidden">
-                  <div className="h-full w-[85%] bg-gradient-to-r from-primary to-secondary rounded-full" />
+                  <div className="h-full w-[85%] bg-gradient-to-r from-primary to-primary/70 rounded-full" />
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Qualified providers</span>
-                  <span className="font-display font-bold text-secondary">3%</span>
+                  <span className="font-display font-bold text-primary">3%</span>
                 </div>
                 <div className="h-3 bg-muted rounded-full overflow-hidden">
-                  <div className="h-full w-[3%] bg-gradient-to-r from-secondary to-primary rounded-full" />
+                  <div className="h-full w-[3%] bg-gradient-to-r from-primary to-primary/70 rounded-full" />
                 </div>
                 <p className="text-sm text-muted-foreground pt-4">
                   The gap between demand and supply creates massive opportunity for trained experts.

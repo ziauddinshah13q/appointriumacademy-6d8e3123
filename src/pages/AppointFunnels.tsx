@@ -29,8 +29,8 @@ const AppointFunnels = () => {
         <div className="container mx-auto px-4">
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-secondary/30 mb-6">
-              <Layers className="w-4 h-4 text-secondary" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/30 mb-6">
+              <Layers className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium">Marketing System</span>
             </div>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6">

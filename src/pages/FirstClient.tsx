@@ -59,7 +59,7 @@ const FirstClient = () => {
             <div className="space-y-6">
               {steps.map((step, index) => (
                 <div key={step.number} className="flex gap-6 items-start">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-xl font-display font-bold text-primary-foreground flex-shrink-0">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-xl font-display font-bold text-primary-foreground flex-shrink-0">
                     {step.number}
                   </div>
                   <GlassCard className="flex-1">
@@ -92,7 +92,7 @@ const FirstClient = () => {
               </ul>
             </GlassCard>
             <GlassCard glow>
-              <DollarSign className="w-12 h-12 text-secondary mb-6" />
+              <DollarSign className="w-12 h-12 text-primary mb-6" />
               <h3 className="font-display text-2xl font-bold mb-4">Pricing Guide</h3>
               <ul className="space-y-3">
                 {[
@@ -103,7 +103,7 @@ const FirstClient = () => {
                   'Building recurring revenue',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">{item}</span>
                   </li>
                 ))}
