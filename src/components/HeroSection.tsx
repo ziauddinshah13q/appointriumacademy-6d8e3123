@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Zap } from 'lucide-react';
+import { ScrollAnimation } from '@/hooks/use-scroll-animation';
 
 const HeroSection = () => {
   return (
@@ -17,45 +18,55 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-12 animate-fade-in">
-            <span className="text-sm text-muted-foreground">60-Day Client Guarantee</span>
-            <span className="text-muted-foreground/50">|</span>
-            <Zap className="w-4 h-4 text-primary" />
-          </div>
+          <ScrollAnimation animation="fade-up" delay={0}>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-12">
+              <span className="text-sm text-muted-foreground">60-Day Client Guarantee</span>
+              <span className="text-muted-foreground/50">|</span>
+              <Zap className="w-4 h-4 text-primary" />
+            </div>
+          </ScrollAnimation>
 
           {/* Main headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-8 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <span className="text-foreground">Learn AI Agents.</span>
-            <br />
-            <span className="font-serif italic text-muted-foreground font-normal">Automate Businesses.</span>
-            <br />
-            <span className="text-foreground">Get Paid.</span>
-          </h1>
+          <ScrollAnimation animation="fade-up" delay={0.1}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
+              <span className="text-foreground">Learn AI Agents.</span>
+              <br />
+              <span className="font-serif italic text-muted-foreground font-normal">Automate Businesses.</span>
+              <br />
+              <span className="text-foreground">Get Paid.</span>
+            </h1>
+          </ScrollAnimation>
 
           {/* Subheadline */}
-          <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            A complete academy to master n8n, AI agents, voice agents & real client systems.
-          </p>
+          <ScrollAnimation animation="fade-up" delay={0.2}>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto mb-12">
+              A complete academy to master n8n, AI agents, voice agents & real client systems.
+            </p>
+          </ScrollAnimation>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <Link to="/courses">
-              <Button variant="default" size="lg" className="bg-foreground text-background hover:bg-foreground/90 font-medium px-8">
-                Explore Courses
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
-            <Link to="/first-client">
-              <Button variant="outline" size="lg" className="border-border text-foreground hover:bg-card font-medium px-8">
-                Get Your First Client
-              </Button>
-            </Link>
-          </div>
+          <ScrollAnimation animation="zoom-in" delay={0.3}>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+              <Link to="/courses">
+                <Button variant="default" size="lg" className="bg-foreground text-background hover:bg-foreground/90 font-medium px-8">
+                  Explore Courses
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+              <Link to="/first-client">
+                <Button variant="outline" size="lg" className="border-border text-foreground hover:bg-card font-medium px-8">
+                  Get Your First Client
+                </Button>
+              </Link>
+            </div>
+          </ScrollAnimation>
 
           {/* Trust indicators */}
-          <p className="text-xs tracking-[0.2em] text-primary uppercase animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            60-DAY RESULTS GUARANTEE OR $0 COST
-          </p>
+          <ScrollAnimation animation="fade-up" delay={0.4}>
+            <p className="text-xs tracking-[0.2em] text-primary uppercase">
+              60-DAY RESULTS GUARANTEE OR $0 COST
+            </p>
+          </ScrollAnimation>
         </div>
       </div>
     </section>
