@@ -34,16 +34,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo - actual image for download/save */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center">
             <img 
               src={aLogo} 
               alt="Appointrium Academy Logo"
               className="h-12 md:h-14 w-auto"
             />
-            <div className="flex flex-col">
-              <span className="font-semibold text-sm tracking-[0.2em] leading-none">APPOINTRIUM</span>
-              <span className="text-[10px] tracking-[0.3em] text-muted-foreground leading-none mt-0.5">ACADEMY</span>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
