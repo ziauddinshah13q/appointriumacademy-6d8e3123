@@ -8,7 +8,7 @@ import About from "./pages/About";
 import WhyAI from "./pages/WhyAI";
 import Courses from "./pages/Courses";
 import N8NCourse from "./pages/N8NCourse";
-import AIAgents from "./pages/AIAgents";
+
 import VoiceAgents from "./pages/VoiceAgents";
 import WhatsApp from "./pages/WhatsApp";
 import LiveClasses from "./pages/LiveClasses";
@@ -36,7 +36,7 @@ const App = () => (
           <Route path="/why-ai" element={<WhyAI />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/n8n-course" element={<N8NCourse />} />
-          <Route path="/ai-agents" element={<AIAgents />} />
+          
           <Route path="/voice-agents" element={<VoiceAgents />} />
           <Route path="/whatsapp" element={<WhatsApp />} />
           <Route path="/live-classes" element={<LiveClasses />} />
