@@ -11,7 +11,7 @@ const Navbar = () => {
   const mainLinks = [
     { name: 'HOME', path: '/' },
     { name: 'COURSES', path: '/courses' },
-    { name: 'RESULTS', path: '/results' },
+    { name: 'COMPANY', path: '/company' },
     { name: 'PRICING', path: '/pricing' },
     { name: 'PRIVACY POLICY', path: '/privacy-policy' },
     { name: 'CONTACT', path: '/contact' },
@@ -80,12 +80,12 @@ const Navbar = () => {
             </div>
 
             <Link
-              to="/results"
+              to="/company"
               className={`text-sm font-medium tracking-wide transition-colors ${
-                isActive('/results') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+                isActive('/company') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
               }`}
             >
-              RESULTS
+              COMPANY
             </Link>
             <Link
               to="/pricing"

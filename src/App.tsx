@@ -16,7 +16,7 @@ import SolutionAgents from "./pages/SolutionAgents";
 import FirstClient from "./pages/FirstClient";
 import AppointFunnels from "./pages/AppointFunnels";
 import Tools from "./pages/Tools";
-import Results from "./pages/Results";
+import Company from "./pages/Company";
 import Pricing from "./pages/Pricing";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -44,7 +44,7 @@ const App = () => (
           <Route path="/first-client" element={<FirstClient />} />
           <Route path="/appoint-funnels" element={<AppointFunnels />} />
           <Route path="/tools" element={<Tools />} />
-          <Route path="/results" element={<Results />} />
+          <Route path="/company" element={<Company />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<Contact />} />
