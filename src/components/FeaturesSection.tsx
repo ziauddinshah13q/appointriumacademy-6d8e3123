@@ -41,10 +41,10 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4">
         <ScrollAnimation animation="fade-up" className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Everything You Need to
+            What You Learn About
           </h2>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif italic text-muted-foreground mb-6">
-            Master AI Automation
+            AI Automation?
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             From zero experience to landing paying clients. Our comprehensive curriculum covers it all.
