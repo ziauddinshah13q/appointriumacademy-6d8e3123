@@ -30,7 +30,7 @@ const Company = () => {
               <img 
                 src={mainLogo} 
                 alt="Appointrium Academy Logo"
-                className="w-48 h-48 md:w-64 md:h-64 object-contain"
+                className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain"
               />
             </div>
           </div>
