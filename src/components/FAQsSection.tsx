@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { ScrollAnimation } from '@/hooks/use-scroll-animation';
 
 const faqs = [
   {
@@ -37,27 +38,29 @@ const FAQsSection = () => {
     <section className="py-24 relative">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
+          <ScrollAnimation animation="fade-up" className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Frequently Asked
             </h2>
             <h2 className="text-3xl sm:text-4xl font-serif italic text-muted-foreground">
               Questions
             </h2>
-          </div>
+          </ScrollAnimation>
 
-          <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-border">
-                <AccordionTrigger className="text-left hover:no-underline hover:text-foreground/80">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          <ScrollAnimation animation="slide-up" delay={0.2}>
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border-border">
+                  <AccordionTrigger className="text-left hover:no-underline hover:text-foreground/80">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </ScrollAnimation>
         </div>
       </div>
     </section>
