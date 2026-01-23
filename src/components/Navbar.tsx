@@ -20,7 +20,6 @@ const Navbar = () => {
 
   const courseLinks = [
     { name: 'n8n Full Course', path: '/n8n-course' },
-    { name: 'AI Agents Course', path: '/ai-agents' },
     { name: 'Voice Agents', path: '/voice-agents' },
     { name: 'WhatsApp Automation', path: '/whatsapp' },
     { name: 'Live Classes', path: '/live-classes' },
