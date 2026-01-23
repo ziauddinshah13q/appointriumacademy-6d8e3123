@@ -59,7 +59,7 @@ const AIStartup = () => {
               <p className="text-muted-foreground">Complete Roadmap</p>
             </GlassCard>
             <GlassCard className="text-center">
-              <DollarSign className="w-12 h-12 text-secondary mx-auto mb-4" />
+              <DollarSign className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="font-display text-3xl font-bold mb-2">$0</div>
               <p className="text-muted-foreground">Startup Cost Strategy</p>
             </GlassCard>

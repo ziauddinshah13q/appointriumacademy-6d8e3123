@@ -65,7 +65,7 @@ const About = () => {
                   <p className="text-muted-foreground text-sm">Students Trained</p>
                 </div>
                 <div>
-                  <div className="font-display text-4xl font-bold text-secondary mb-2">$2M+</div>
+                  <div className="font-display text-4xl font-bold text-primary mb-2">$2M+</div>
                   <p className="text-muted-foreground text-sm">Student Earnings</p>
                 </div>
                 <div>
@@ -73,7 +73,7 @@ const About = () => {
                   <p className="text-muted-foreground text-sm">Day Guarantee</p>
                 </div>
                 <div>
-                  <div className="font-display text-4xl font-bold text-secondary mb-2">100%</div>
+                  <div className="font-display text-4xl font-bold text-primary mb-2">100%</div>
                   <p className="text-muted-foreground text-sm">Practical Skills</p>
                 </div>
               </div>

@@ -34,8 +34,8 @@ const WhatsApp = () => {
         <div className="container mx-auto px-4">
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-green-500/30 mb-6">
-              <MessageSquare className="w-4 h-4 text-green-500" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/30 mb-6">
+              <MessageSquare className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium">2B+ Users</span>
             </div>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
@@ -50,7 +50,7 @@ const WhatsApp = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {features.map((feature) => (
               <GlassCard key={feature.title}>
-                <feature.icon className="w-10 h-10 text-green-500 mb-4" />
+                <feature.icon className="w-10 h-10 text-primary mb-4" />
                 <h3 className="font-display font-semibold mb-2">{feature.title}</h3>
                 <p className="text-muted-foreground text-sm">{feature.description}</p>
               </GlassCard>
@@ -72,7 +72,7 @@ const WhatsApp = () => {
                 'Analytics and optimization',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3 p-4 glass rounded-xl">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                   <span>{item}</span>
                 </div>
               ))}

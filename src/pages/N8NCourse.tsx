@@ -66,7 +66,7 @@ const N8NCourse = () => {
               <div className="space-y-3">
                 {modules.map((module, index) => (
                   <div key={module} className="flex items-center gap-3 p-3 glass rounded-xl">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-sm font-bold text-primary">
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center text-sm font-bold text-primary">
                       {index + 1}
                     </div>
                     <span>{module}</span>
