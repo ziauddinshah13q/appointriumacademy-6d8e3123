@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/923205067483"
+      href="https://wa.me/923303120032"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 group"

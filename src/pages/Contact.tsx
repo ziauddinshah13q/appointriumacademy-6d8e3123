@@ -58,12 +58,12 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">WhatsApp</h3>
                     <a 
-                      href="https://wa.me/923205067483" 
+                      href="https://wa.me/923303120032" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-green-500 transition-colors"
                     >
-                      +92 320 506 7483
+                      +92 330 312 0032
                     </a>
                     <p className="text-sm text-muted-foreground mt-1">Fastest response</p>
                   </div>
@@ -77,8 +77,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <a href="tel:+923205067483" className="text-muted-foreground hover:text-primary transition-colors">
-                      +92 320 506 7483
+                    <a href="tel:+923303120032" className="text-muted-foreground hover:text-primary transition-colors">
+                      +92 330 312 0032
                     </a>
                   </div>
                 </div>

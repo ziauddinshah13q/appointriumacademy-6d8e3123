@@ -53,13 +53,13 @@ const Footer = () => {
                 appointfunnels@gmail.com
               </a>
               <a 
-                href="https://wa.me/923205067483" 
+                href="https://wa.me/923303120032" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                +92 320 506 7483
+                +92 330 312 0032
               </a>
             </div>
           </div>
