@@ -6,6 +6,7 @@ import { Phone, CheckCircle, ArrowRight, Mic, Clock, Users } from 'lucide-react'
 
 const useCases = [
   { title: 'AI Receptionist', description: 'AI handles incoming calls and routes them intelligently' },
+  { title: 'AI Appointment Setter', description: 'Automatically book and confirm appointments via phone' },
   { title: 'AI Cold Caller', description: 'Automated outbound calls to generate new leads' },
   { title: 'AI Lead Reactivation', description: 'Re-engage old leads and bring them back' },
   { title: 'AI Order Confirmation', description: 'Confirm orders and provide updates via phone' },
@@ -38,9 +39,9 @@ const VoiceAgents = () => {
               <p className="text-muted-foreground">Always Available</p>
             </GlassCard>
             <GlassCard className="text-center">
-              <Clock className="w-12 h-12 text-secondary mx-auto mb-4" />
-              <div className="font-display text-3xl font-bold mb-2">90%</div>
-              <p className="text-muted-foreground">Cost Reduction</p>
+              <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
+              <div className="font-display text-3xl font-bold mb-2">10x</div>
+              <p className="text-muted-foreground">Faster Response</p>
             </GlassCard>
             <GlassCard className="text-center">
               <Users className="w-12 h-12 text-primary mx-auto mb-4" />
