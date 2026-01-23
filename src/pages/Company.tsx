@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import GlassCard from '@/components/GlassCard';
 import { Building2, Users, Zap, ArrowRight } from 'lucide-react';
+import mainLogo from '@/assets/logos/main-logo-white.svg';
 
 const Company = () => {
   return (
@@ -24,18 +25,13 @@ const Company = () => {
               </p>
             </div>
             
-            {/* Logo on the right */}
+            {/* Logo on the right - actual image for download/save */}
             <div className="shrink-0">
-              <div className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-foreground/20 flex items-center justify-center bg-background/50 backdrop-blur-sm">
-                <div className="text-center">
-                  <div className="w-20 h-20 md:w-28 md:h-28 mx-auto rounded-full border-4 border-foreground flex items-center justify-center mb-2">
-                    <span className="text-foreground font-bold text-3xl md:text-5xl">A</span>
-                  </div>
-                  <span className="font-semibold text-sm md:text-base tracking-[0.15em]">APPOINTRIUM</span>
-                  <br />
-                  <span className="text-[10px] md:text-xs tracking-[0.2em] text-muted-foreground">ACADEMY</span>
-                </div>
-              </div>
+              <img 
+                src={mainLogo} 
+                alt="Appointrium Academy Logo" 
+                className="w-48 h-48 md:w-64 md:h-64 object-contain"
+              />
             </div>
           </div>
 
