@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import mainLogo from '@/assets/logos/main-logo-white.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,15 +33,13 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-full border-2 border-foreground flex items-center justify-center">
-              <span className="text-foreground font-semibold text-sm">A</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-semibold text-sm tracking-[0.2em] leading-none">APPOINTRIUM</span>
-              <span className="text-[10px] tracking-[0.3em] text-muted-foreground leading-none mt-0.5">ACADEMY</span>
-            </div>
+          {/* Logo - actual image for download/save */}
+          <Link to="/" className="flex items-center">
+            <img 
+              src={mainLogo} 
+              alt="Appointrium Academy Logo"
+              className="h-8 md:h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
