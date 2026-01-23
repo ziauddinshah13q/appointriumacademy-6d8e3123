@@ -12,9 +12,7 @@ const modules = [
   'Conditional Logic & Loops',
   'Database Operations',
   'Error Handling & Debugging',
-  'Advanced Workflows',
   'Production Deployment',
-  'Client-Ready Templates',
 ];
 
 const features = [
@@ -80,11 +78,11 @@ const N8NCourse = () => {
               <ul className="space-y-3 mb-8">
                 {[
                   'Lead capture & CRM automation',
-                  'Email marketing workflows',
-                  'Social media schedulers',
+                  'Email Automations',
+                  'Google Review Agent',
                   'Invoice & payment systems',
-                  'Customer onboarding flows',
-                  'Data sync between platforms',
+                  'Database Operations',
+                  'Facebook Library Scraping Automation',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
