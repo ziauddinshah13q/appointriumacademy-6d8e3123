@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import aLogo from '@/assets/logos/a-logo.png';
+import academyLogo from '@/assets/logos/academy-logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +36,9 @@ const Navbar = () => {
           {/* Logo - actual image for download/save */}
           <Link to="/" className="flex items-center">
             <img 
-              src={aLogo} 
+              src={academyLogo} 
               alt="Appointrium Academy Logo"
-              className="h-12 md:h-14 w-auto"
+              className="h-10 md:h-12 w-auto"
             />
           </Link>
 
