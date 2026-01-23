@@ -1,5 +1,6 @@
 import { Bot, Workflow, Phone, MessageSquare, Users, Zap } from 'lucide-react';
 import GlassCard from './GlassCard';
+import { ScrollAnimation } from '@/hooks/use-scroll-animation';
 
 const features = [
   {
@@ -38,7 +39,7 @@ const FeaturesSection = () => {
   return (
     <section className="py-24 relative">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <ScrollAnimation animation="fade-up" className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Everything You Need to
           </h2>
@@ -48,17 +49,23 @@ const FeaturesSection = () => {
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             From zero experience to landing paying clients. Our comprehensive curriculum covers it all.
           </p>
-        </div>
+        </ScrollAnimation>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature) => (
-            <GlassCard key={feature.title} className="group">
-              <div className="w-10 h-10 rounded-md bg-muted flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
-                <feature.icon className="w-5 h-5 text-foreground" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground text-sm">{feature.description}</p>
-            </GlassCard>
+          {features.map((feature, index) => (
+            <ScrollAnimation 
+              key={feature.title} 
+              animation="fade-up" 
+              delay={index * 0.1}
+            >
+              <GlassCard className="group h-full">
+                <div className="w-10 h-10 rounded-md bg-muted flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+                  <feature.icon className="w-5 h-5 text-foreground" />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                <p className="text-muted-foreground text-sm">{feature.description}</p>
+              </GlassCard>
+            </ScrollAnimation>
           ))}
         </div>
       </div>
