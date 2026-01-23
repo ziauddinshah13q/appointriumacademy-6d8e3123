@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import GlassCard from '@/components/GlassCard';
 import { Building2, Users, Zap, ArrowRight } from 'lucide-react';
-import academyLogo from '@/assets/logos/appointrium-academy-logo.png';
+import aLogo from '@/assets/logos/a-logo.png';
 
 const Company = () => {
   return (
@@ -28,7 +28,7 @@ const Company = () => {
             {/* Logo on the right - actual image for download/save */}
             <div className="shrink-0">
               <img 
-                src={academyLogo} 
+                src={aLogo} 
                 alt="Appointrium Academy Logo"
                 className="w-48 h-48 md:w-64 md:h-64 object-contain"
               />
