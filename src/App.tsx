@@ -9,7 +9,8 @@ import WhyAI from "./pages/WhyAI";
 import Courses from "./pages/Courses";
 import N8NCourse from "./pages/N8NCourse";
 import AIStartup from "./pages/AIStartup";
-
+import AIAgents from "./pages/AIAgents";
+import ColdEmailing from "./pages/ColdEmailing";
 import VoiceAgents from "./pages/VoiceAgents";
 import WhatsApp from "./pages/WhatsApp";
 import LiveClasses from "./pages/LiveClasses";
@@ -41,7 +42,8 @@ const App = () => (
           <Route path="/courses" element={<Courses />} />
           <Route path="/n8n-course" element={<N8NCourse />} />
           <Route path="/ai-startup" element={<AIStartup />} />
-
+          <Route path="/ai-agents" element={<AIAgents />} />
+          <Route path="/cold-emailing" element={<ColdEmailing />} />
           <Route path="/voice-agents" element={<VoiceAgents />} />
           <Route path="/whatsapp" element={<WhatsApp />} />
           <Route path="/live-classes" element={<LiveClasses />} />
