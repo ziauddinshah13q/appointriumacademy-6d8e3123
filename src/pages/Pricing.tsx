@@ -55,6 +55,7 @@ const plans = [
       'Handle First 10 Sales Calls',
       'Trained Use of Appoint Funnels Testimonials',
       'One Auto Dialer for Dialing Calls',
+      'Use Our Cold Calling & Cold Emailing Scripts',
       '1-on-1 Coaching Calls',
       'Done-For-You Templates',
       'White-Label Resources',
