@@ -29,12 +29,16 @@ const PromiseSection = () => {
                 We're so confident in our system that we'll refund every penny if you don't land a paying client within 60 days of completing the program.
               </p>
 
-              <Link to="/first-client">
+              <a
+                href="https://wa.me/923303120032"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="hero" size="lg">
                   Claim Your Guarantee
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
-              </Link>
+              </a>
             </div>
           </ScrollAnimation>
         </div>
