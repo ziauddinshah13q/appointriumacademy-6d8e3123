@@ -53,11 +53,15 @@ const HeroSection = () => {
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <Link to="/first-client">
+              <a
+                href="https://wa.me/923303120032"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="outline" size="lg" className="border-border text-foreground hover:bg-card font-medium px-8">
                   Get Your First Client
                 </Button>
-              </Link>
+              </a>
             </div>
           </ScrollAnimation>
 

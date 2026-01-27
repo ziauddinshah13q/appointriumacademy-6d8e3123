@@ -1,20 +1,63 @@
 import PageLayout from '@/components/PageLayout';
 import { Button } from '@/components/ui/button';
 import GlassCard from '@/components/GlassCard';
-import { Mail, MessageCircle, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, MessageCircle, Phone, Send } from 'lucide-react';
 import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
+
+const WEBHOOK_URL = 'https://ziauddin21.app.n8n.cloud/webhook/n8nai';
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    whatsapp: '',
     subject: '',
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:appointfunnels@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
+    setIsLoading(true);
+
+    try {
+      await fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        mode: 'no-cors',
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(),
+          source: 'contact_form',
+        }),
+      });
+
+      toast({
+        title: 'Message Sent!',
+        description: "We've received your message and will get back to you soon.",
+      });
+
+      setFormData({
+        name: '',
+        email: '',
+        whatsapp: '',
+        subject: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: 'Error',
+        description: 'Failed to send message. Please try WhatsApp instead.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -122,6 +165,17 @@ const Contact = () => {
                     />
                   </div>
                   <div>
+                    <label htmlFor="whatsapp" className="block text-sm font-medium mb-2">WhatsApp Number</label>
+                    <input
+                      type="tel"
+                      id="whatsapp"
+                      value={formData.whatsapp}
+                      onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
+                      className="w-full px-4 py-3 rounded-xl bg-muted/50 border border-border focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                      placeholder="+92 300 1234567"
+                    />
+                  </div>
+                  <div>
                     <label htmlFor="subject" className="block text-sm font-medium mb-2">Subject</label>
                     <input
                       type="text"
@@ -145,8 +199,8 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  <Button type="submit" variant="hero" size="lg" className="w-full">
-                    Send Message
+                  <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isLoading}>
+                    {isLoading ? 'Sending...' : 'Send Message'}
                     <Send className="w-5 h-5" />
                   </Button>
                 </form>
