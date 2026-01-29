@@ -23,6 +23,8 @@ import Pricing from "./pages/Pricing";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
 import AIAgentsVsAutomation from "./pages/AIAgentsVsAutomation";
+import WhatIsRAG from "./pages/WhatIsRAG";
+import RAGvsChatbots from "./pages/RAGvsChatbots";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -55,6 +57,8 @@ const App = () => (
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/ai-agents-vs-automation" element={<AIAgentsVsAutomation />} />
+        <Route path="/what-is-rag" element={<WhatIsRAG />} />
+        <Route path="/rag-vs-chatbots" element={<RAGvsChatbots />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </TooltipProvider>
